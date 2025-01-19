@@ -1,0 +1,10 @@
+.titulo-modal {
+  font-size: 18px;
+  color: #485497;
+  text-align: center;
+  padding: 0.5rem;
+}
+.cont-botones {
+  display: flex;
+  justify-content: flex-end;
+}

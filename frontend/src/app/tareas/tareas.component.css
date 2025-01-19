@@ -1,0 +1,172 @@
+/* Para contenedor */
+.container {
+  height: 20rem;
+  overflow: scroll;
+}
+/* Para contenedor boton */
+.container-boton {
+  display: flex;
+  justify-content: end;
+}
+/* Para la tabla */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.task-table th,
+.task-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.actions img {
+  width: 20px;
+  height: 20px;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.no-data-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.tachar {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .task-table,
+  .task-table th,
+  .task-table td {
+    display: block;
+  }
+
+  .task-table th {
+    display: none;
+  }
+
+  .task-table td {
+    border: 1px solid #ddd;
+    margin: 5px 0;
+  }
+
+  .task-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+/*****/
+.cbx {
+  position: relative;
+  top: 1px;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #c8ccd4;
+  border-radius: 3px;
+  vertical-align: middle;
+  transition: background 0.1s ease;
+  cursor: pointer;
+  display: block;
+}
+ 
+.cbx:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 7px;
+  height: 14px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+ 
+.lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+ 
+input[type="checkbox"]:checked + .cbx {
+  border-color: transparent;
+  background: #6871f1;
+  animation: jelly 0.6s ease;
+}
+ 
+input[type="checkbox"]:checked + .cbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+ 
+.cntr {
+  position: relative;
+}
+ 
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+ 
+.hidden-xs-up {
+  display: none !important;
+}
+ 
+.class_center_elements {
+  display: flex;
+  justify-content: center;
+}

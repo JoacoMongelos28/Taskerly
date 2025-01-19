@@ -1,0 +1,11 @@
+mat-form-field {
+    display: block;
+}
+
+.contenedor-form {
+    padding: 0 30px;
+}
+
+.titulo-crear-tarea {
+    text-align: center;
+}
