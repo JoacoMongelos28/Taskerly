@@ -1,0 +1,40 @@
+<h1 class="titulo-crear-tarea" mat-dialog-title>{{ data ? "Editar" : "Crear" }} tarea</h1>
+<div class="contenedor-form">
+  <div>
+  <label>Título de la tarea:</label>
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="tarea.titulo"
+      placeholder="Nombre de la tarea"
+      required
+      #titulo="ngModel"
+    />
+    <mat-error *ngIf="titulo.invalid && titulo.touched">
+      El título es obligatorio.
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<div>
+  <label>Descripción de la tarea:</label>
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="tarea.descripcion"
+      placeholder="Descripción de la tarea"
+      required
+      #descripcion="ngModel"
+    />
+    <mat-error *ngIf="descripcion.invalid && descripcion.touched">
+      La descripción es obligatoria.
+    </mat-error>
+  </mat-form-field>
+</div>
+</div>
+<div mat-dialog-actions>
+  <button class="edit-btn" mat-button (click)="cancel()">Cancelar</button>
+  <button class="add-task-btn" mat-button (click)="saveChanges()">
+    Guardar
+  </button>
+</div>
