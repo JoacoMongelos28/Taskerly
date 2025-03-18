@@ -17,8 +17,8 @@ Technologies:<br>
 > [!NOTE]
 >Prerequisites:<br>
 >• Node.js (v16 or higher)<br>
->• Angular CLI (v18 or higher)<br>
 >• MySQL (Recommended)<br>
+>• Angular CLI (v18 or higher)<br>
 
 <br>
 
@@ -52,3 +52,7 @@ CREATE TABLE Tarea (<br>
 >7. Start the frontend:<br>
    cd ../frontend<br>
    ng serve
+
+> [!TIP]
+> API: http://localhost:3000/<br>
+> Browser: http://localhost:4200
