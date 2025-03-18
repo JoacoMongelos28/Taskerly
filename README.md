@@ -1,71 +1,45 @@
-# TPFinalTaller2
+# Taskerly
 
-Taskerly
-Una aplicación para la gestión de tareas que permite a los usuarios crear, visualizar, editar y marcar tareas como completadas. La aplicación está desarrollada con Angular en el frontend y Node.js para la API en el backend.
+Taskerly is a task management application that allows users to create, view, edit, and mark tasks as completed.
 
-Características
-Creación de tareas: Los usuarios pueden añadir nuevas tareas con un título y descripción.
-Visualización: Las tareas se muestran en una tabla organizada.
-Edición: Es posible editar las tareas existentes.
-Estado: Las tareas pueden marcarse como completadas.
+Features:<br>
+• Editing: Existing tasks can be edited.<br>
+• Status: Tasks can be marked as completed.<br>
+• Viewing: Tasks are displayed in an organized table.<br>
+• Task Creation: Users can add new tasks with a title and description.<br>
 
-Tecnologías Utilizadas
-Frontend: Angular 18
-Backend: Node.js
-Base de Datos: MySQL
-Librerías adicionales:
-Angular Material
+Technologies:<br>
+• Backend: Node.js<br>
+• Database: MySQL<br>
+• Frontend: Angular<br>
+• Libraries: Angular Material<br><br>
 
-Instalación
-Requisitos Previos
-Node.js (v16 o superior)
-Angular CLI (v18)
-MySQL
+> [!NOTE]
+>Prerequisites:<br>
+>• Node.js (v16 or higher)<br>
+>• Angular CLI (v18 or higher)<br>
+>• MySQL (Recommended)<br>
 
-Pasos para instalar
+<br>
 
-1. Clonar el repositorio:
-   git clone https://github.com/brendiaz03/TPFinalTaller2.git
-   cd TPFinalTaller2
-
-2. Instalar dependencias del backend:
-   cd api
-   npm install
-
-3. Instalar dependencias del frontend:
-   cd ../frontend
-   npm install
-
-4. Configurar variables de entorno:
-   Crear un archivo .env en la carpeta api con las siguientes variables:
-   DB_HOST=localhost
-   DB_PORT=
-   DB_USER=
-   DB_PASSWORD=
-   DB_NAME=db_todoapp
-
-5. Iniciar el backend:
-   cd api
-   npm start
-
-6. Iniciar el frontend:
-   cd ../frontend
+> [!IMPORTANT]
+>1. Clone Repository: git clone https://github.com/JoacoMongelos28/Taskerly.git
+>2. Install backend dependencies:<br><br>
+   cd Taskerly/api<br>
+   npm install<br><br>
+>3. Install frontend dependencies:<br><br>
+   cd ../frontend<br>
+   npm install<br><br>
+>4. Set up environment variables:<br>
+   Create a .env file in the api folder using the .env.example file.<br>
+   DB_HOST=localhost<br>
+   DB_PORT=your_port<br>
+   DB_USER=your_user<br>
+   DB_PASSWORD=your_password<br>
+   DB_NAME=db_todoapp<br><br>
+>5. Start the backend:<br>
+   cd api<br>
+   npm start<br><br>
+>6. Start the frontend:<br>
+   cd ../frontend<br>
    ng serve
-
-Uso
-Accede a la aplicación en tu navegador: http://localhost:4200
-Usa las funcionalidades disponibles:
-Añadir nuevas tareas.
-Ver las tareas existentes en la tabla.
-Editar tareas seleccionadas.
-Marcar tareas como completadas.
-
-API Endpoints
-Base URL:
-http://localhost:3000/
-
-Método Endpoint Descripción
-GET /tareas Obtiene todas las tareas.
-POST /tareas Crea una nueva tarea.
-PUT /tareas/:id Edita una tarea por su ID.
-DELETE /tareas/:id Elimina una tarea por su ID.
