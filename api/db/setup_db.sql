@@ -1,6 +1,6 @@
 -- Creación y uso de la db, ejecutar estas 2 lineas primero
-CREATE DATABASE db_todoapp;
-USE db_todoapp;
+CREATE DATABASE Taskerly;
+USE Taskerly;
 
 -- Creación de la tabla Tarea
 CREATE TABLE Tarea (
