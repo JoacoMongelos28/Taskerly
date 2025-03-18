@@ -36,7 +36,7 @@ Technologies:<br>
    DB_PORT=your_port<br>
    DB_USER=your_user<br>
    DB_PASSWORD=your_password<br>
-   DB_NAME=db_todoapp<br><br>
+   DB_NAME=Taskerly<br><br>
 >5. Start the backend:<br>
    cd api<br>
    npm start<br><br>
