@@ -75,9 +75,9 @@ Taskerly is a task management application that allows users to create, view, edi
 <br>
 
 > [!TIP]
-> Endpoints:<br>
-> API: http://localhost:3000/<br>
-> Browser: http://localhost:4200
+> ## Endpoints:<br>
+> **API:** http://localhost:3000/<br>
+> **Browser:** http://localhost:4200
 
 ## 📫 Contact me
 • 🌐 [Portfolio](https://joaquinmongelos.netlify.app/)<br>
